@@ -1,0 +1,86 @@
+:root{
+  --dark-blue: #1b2f45;
+  --light-blue: #56b8e6;
+  --lighter-blue: #7fc9eb;
+  --white:#e0e4e6;
+}
+
+.bg-dark-blue{
+  background-color: var(--dark-blue);
+  min-height: 60vh;
+  flex-direction: column;
+}
+
+.btn-dark-blue{
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border-radius: 5rem;
+}
+
+.btn-dark-blue:hover{
+  background-color: var(--light-blue);
+}
+
+.btn-light-blue{
+  background-color: var(--light-blue);
+  color: var(--white);
+  border-radius: 5rem;
+}
+
+.btn-light-blue:hover{
+  background-color: var(--lighter-blue);
+}
+
+.dropdown-mxs{
+  max-width: 7vw;
+}
+
+main > section {
+  min-height: 5vh;
+}
+
+.font-whiter{
+  color: var(--white);
+  
+}
+
+.bl-light-blue{
+  border-left: 2px solid var(--light-blue);
+}
+
+.p-10 {
+  padding: 5rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.fs-0 {
+  font-weight: 500;
+  font-size: 50pt;
+}
+
+header{
+  position: absolute;
+}
+
+.full-img {
+  padding: 0;
+  object-fit: cover;
+}
+
+.image{
+  width:100%;
+}
+
+.minus-icon {
+  font-size: 50pt;
+  color: var(--light-blue);
+}
+
+.icon-height {
+  max-height: 24px;
+}
+
+.icon-size {
+  font-size: 50pt;
+}
