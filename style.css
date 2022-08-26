@@ -2,7 +2,7 @@
   --dark-blue: #1b2f45;
   --light-blue: #56b8e6;
   --lighter-blue: #7fc9eb;
-  --white:#ced1d2;
+  --white:#dcdfdf;
   --whiter:#e0e4e6;
   --dark: #131313;
   --light-dark: #1f1f1f;
@@ -34,7 +34,17 @@
   border-radius: 5rem;
 }
 
+.btn-light-blue-square{
+  background-color: var(--light-blue);
+  color: var(--whiter);
+  border-radius: 0.5rem;
+}
+
 .btn-light-blue:hover{
+  background-color: var(--lighter-blue);
+}
+
+.btn-light-blue-square:hover{
   background-color: var(--lighter-blue);
 }
 
@@ -110,7 +120,7 @@ header{
   text-shadow: 0.0625rem 0.125rem 2pt var(--light-dark);
 }
 
-.header-block-light {
+.header-block {
   box-shadow: 0.125rem 0.25rem 2pt var(--dark);
 }
 
@@ -204,7 +214,12 @@ header{
   font-size: var(--icon-size-sm);
   color: var(--dark-blue);
 }
+
 p.no-margin {
+  margin: 0;
+}
+
+h3.no-margin {
   margin: 0;
 }
 
