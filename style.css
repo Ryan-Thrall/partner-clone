@@ -5,7 +5,11 @@
   --white:#ced1d2;
   --whiter:#e0e4e6;
   --dark: #131313;
+  --light-dark: #1f1f1f;
   --icon-size: 35pt;
+  --icon-size-sm: 20pt;
+  --phone-whiter: #ffffff;
+  --phone-white: #d2d5d8;
 }
 
 .bg-dark-blue{
@@ -57,6 +61,12 @@ main > section {
   padding-bottom: 15rem;
 }
 
+.p-8 {
+  padding: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
 .fs-0 {
   font-weight: 500;
   font-size: 50pt;
@@ -94,8 +104,18 @@ header{
   text-shadow: 0.125rem 0.25rem 2pt var(--dark);
 }
 
-.header-block {
+.header-text-dark {
+  color: var(--dark);
+  /* font-weight: bold; */
+  text-shadow: 0.0625rem 0.125rem 2pt var(--light-dark);
+}
+
+.header-block-light {
   box-shadow: 0.125rem 0.25rem 2pt var(--dark);
+}
+
+.header-block-light {
+  box-shadow: 0.125rem 0.25rem 2pt var(--light-dark);
 }
 
 .bg-light-color {
@@ -134,5 +154,60 @@ header{
 
 .img-bg-cta {
   background-image: url(https://thiscatdoesnotexist.com/);
-  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.dual-tone-bg {
+  background: linear-gradient(180deg, var(--phone-whiter) 20%, var(--phone-white));
+}
+
+.p-7 {
+  padding: 5rem;
+}
+
+.pe-10 {
+  padding-right: 10rem;
+}
+
+.icon-orange-sm{
+  font-size: var(--icon-size-sm);
+  color: orange;
+}
+
+.icon-orange-red-sm{
+  font-size: var(--icon-size-sm);
+  color: orangered;
+}
+
+.icon-light-green-sm{
+  font-size: var(--icon-size-sm);
+  color: lightgreen;
+}
+
+.icon-magenta-sm{
+  font-size: var(--icon-size-sm);
+  color: magenta;
+}
+
+.icon-cyan-sm{
+  font-size: var(--icon-size-sm);
+  color: cyan;
+}
+
+.icon-yellow-sm{
+  font-size: var(--icon-size-sm);
+  color: yellow;
+}
+
+.icon-dark-blue-sm{
+  font-size: var(--icon-size-sm);
+  color: var(--dark-blue);
+}
+p.no-margin {
+  margin: 0;
+}
+
+.mb-10 {
+  margin-bottom: 14rem;
 }
