@@ -2,7 +2,10 @@
   --dark-blue: #1b2f45;
   --light-blue: #56b8e6;
   --lighter-blue: #7fc9eb;
-  --white:#e0e4e6;
+  --white:#ced1d2;
+  --whiter:#e0e4e6;
+  --dark: #131313;
+  --icon-size: 35pt;
 }
 
 .bg-dark-blue{
@@ -13,7 +16,7 @@
 
 .btn-dark-blue{
   background-color: var(--dark-blue);
-  color: var(--white);
+  color: var(--whiter);
   border-radius: 5rem;
 }
 
@@ -23,7 +26,7 @@
 
 .btn-light-blue{
   background-color: var(--light-blue);
-  color: var(--white);
+  color: var(--whiter);
   border-radius: 5rem;
 }
 
@@ -40,7 +43,7 @@ main > section {
 }
 
 .font-whiter{
-  color: var(--white);
+  color: var(--whiter);
   
 }
 
@@ -83,4 +86,53 @@ header{
 
 .icon-size {
   font-size: 50pt;
+}
+
+.header-text {
+  color: var(--whiter);
+  font-weight: bolder;
+  text-shadow: 0.125rem 0.25rem 2pt var(--dark);
+}
+
+.header-block {
+  box-shadow: 0.125rem 0.25rem 2pt var(--dark);
+}
+
+.bg-light-color {
+  background-color: var(--white);
+}
+
+.icon-orange{
+  font-size: var(--icon-size);
+  color: orange;
+}
+
+.icon-green{
+  font-size: var(--icon-size);
+  color: green;
+}
+
+.icon-magenta{
+  font-size: var(--icon-size);
+  color: magenta;
+}
+
+.icon-cyan{
+  font-size: var(--icon-size);
+  color: cyan;
+}
+
+.icon-yellow{
+  font-size: var(--icon-size);
+  color: yellow;
+}
+
+.icon-dark-blue{
+  font-size: var(--icon-size);
+  color: var(--dark-blue);
+}
+
+.img-bg-cta {
+  background-image: url(https://thiscatdoesnotexist.com/);
+  width: 100%;
 }
