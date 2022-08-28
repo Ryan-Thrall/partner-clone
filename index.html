@@ -1,315 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
-  <link rel="stylesheet" href="style.css">
-  <title>Nova</title>
-  <link rel="stylesheet" href="//cdn.materialdesignicons.com/6.9.96/css/materialdesignicons.min.css">
-</head>
 
-<style>
-  body.debug .container,
-  body.debug .container-fluid {
-    outline: 2px double blue;
-    outline-offset: -2px;
-  }
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+      integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+    <link rel="stylesheet" href="style.css">
+    <title>Nova</title>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/6.9.96/css/materialdesignicons.min.css">
+  </head>
 
-  body.debug .row {
-    outline: 2px dashed red;
-    outline-offset: -2px;
-  }
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
 
-  body.debug [class*="col-"] {
-    outline: 2px dotted forestgreen;
-    outline-offset: -3px;
-  }
-</style>
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
 
-<body class="debug">
-  <header class="container-fluid bg-transparent header-text">
-    <nav class="row justify-content-between p-3">
-      <div class="col-1">
-        <h3>Nova</h3>
-      </div>
-      <div class="col-5 d-flex align-items-center justify-content-between">
-        <p class="mx-2">Home</p>
-        <p class="mx-2">About</p>
-        <p class="mx-2">Services</p>
-        <p class="mx-2">Portfolio</p>
-        <p class="mx-2">Team</p>
-        <p class="mx-2">Blog</p>
-        <div class="input-group mb-3 mx-2 dropdown-mxs header-block-light">
-          <select class="form-select" id="inputGroupSelect01">
-            <option selected>Dropdown</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+  <body class="debuug">
+    <header class="container-fluid bg-transparent header-text">
+      <nav class="row justify-content-between p-sm-3">
+        <div class="col-1">
+          <h3>Nova</h3>
         </div>
-        <p class="mx-2">Contact</p>
-      </div>
-    </nav>
-  </header>
-  <main class="container-fluid">
-    <!-- SECTION Hero -->
-    <section class="row hero">
-      <div class="col-5 bg-dark-blue p-10 d-flex justify-content-center">
-        <div class="fw-bolder font-whiter">
-          <h1 class="fs-0">Focus On What Matters</h1>
+        <div class="col-1 col-sm-5 d-flex align-items-center  justify-content-sm-between">
+          <p class="mx-2 d-none d-sm-block">Home</p>
+          <p class="mx-2 d-none d-sm-block">About</p>
+          <p class="mx-2 d-none d-sm-block">Services</p>
+          <p class="mx-2 d-none d-sm-block">Portfolio</p>
+          <p class="mx-2 d-none d-sm-block">Team</p>
+          <p class="mx-2 d-none d-sm-block">Blog</p>
+          <div class="input-group mb-3 mx-2 dropdown-mxs header-block d-none d-sm-block">
+            <select class="form-select" id="inputGroupSelect01">
+              <option selected>Dropdown</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <p class="mx-2 d-none d-md-block">Contact</p>
+          <i class="mdi mdi-menu d-block d-sm-none"></i>
         </div>
-        <div class="px-3 font-whiter bl-light-blue my-3">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint laborum numquam quo officiis, atque, porro expedita aliquam dignissimos delectus cupiditate.</p>
-        </div>
-        <div>
-          <button type="button" class="btn btn-light-blue">Get Started</button>
-          <button type="button" class="btn btn-dark-blue"><i class="mdi mdi-play-circle-outline"></i> Watch Video</button>
-        </div>
-      </div>
-      <div class="col-7 full-img">
-        <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
-      </div>
-    </section>
-    <!-- SECTION Why choose us? -->
-    <section class="row p-5">
-      <div class="col-12 text-center mb-1">
-        <h1>Why choose us</h1>
-      </div>
-      <div class="col-12 d-flex justify-content-center icon-height align-items-center mb-3">
-        <i class="mdi mdi-minus minus-icon"></i>
-      </div>
-      <div class="col-4 full-img">
-        <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
-      </div>
-      <div class="col-8 d-flex align-items-center bg-light-color">
-        <div>
-          <i class="mdi mdi-chevron-left icon-size"></i>
-        </div>
-        <div class="d-flex flex-column align-items-center">
-          <h1>Lorem ipsum dolor sit.</h1>
-          <h5>Lorem ipsum, dolor sit amet consectetur adipisicing.</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat natus omnis laudantium totam blanditiis perspiciatis odit reiciendis, culpa similique? Voluptas tempora numquam aut!</p>
-          <i class="mdi mdi-dots-horizontal icon-size mt-5"></i>
-        </div>
-        <div>
-          <i class="mdi mdi-chevron-right icon-size"></i>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION Our services -->
-    <section class="row p-5">
-      <div class="col-12 text-center mb-1">
-        <h1>Our Services</h1>
-      </div>
-      <div class="col-12 d-flex justify-content-center icon-height align-items-center mb-3">
-        <i class="mdi mdi-minus minus-icon"></i>
-      </div>
-      <div class="col-4 d-flex pe-4 pb-4">
-        <i class="mdi mdi-bag-suitcase icon-orange me-3"></i>
-        <div>
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus rerum.</p>
-        </div>
-      </div>
-      <div class="col-4 d-flex px-4 pb-4">
-        <i class="mdi mdi-format-list-checks icon-green me-3"></i>
-        <div>
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus rerum.</p>
-        </div>
-      </div>
-      <div class="col-4 d-flex ps-4 pb-4">
-        <i class="mdi mdi-chart-bar icon-magenta me-3"></i>
-        <div>
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus rerum.</p>
-        </div>
-      </div>
-      <div class="col-4 d-flex pt-4 pe-4">
-        <i class="mdi mdi-binoculars icon-cyan me-3"></i>
-        <div>
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus rerum.</p>
-        </div>
-      </div>
-      <div class="col-4 d-flex pt-4 px-4">
-        <i class="mdi mdi-weather-sunny icon-yellow me-3"></i>
-        <div>
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus rerum.</p>
-        </div>
-      </div>
-      <div class="col-4 d-flex pt-4 ps-4">
-        <i class="mdi mdi-calendar-multiselect icon-dark-blue me-3"></i>
-        <div>
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus rerum.</p>
-        </div>
-      </div>
-    </section>
-    <!-- SECTION Call to action -->
-    <section class="row img-bg-cta d-flex justify-content-center align-items-center">
-      <div class="col-6 p-10 header-text">
-        <h3>Lorem ipsum dolor sit amet.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut quidem, consequatur, doloremque sunt sit corrupti necessitatibus dolorum ab hic, quos harum?</p>
-        <button type="button" class="btn btn-light-blue header-block">Call To Action</button>
-      </div>
-    </section>
-    <!-- SECTION Phone section-->
-    <section class="row p-7 dual-tone-bg">
-      <div class="col-8 p-8">
-        <div class="mb-10">
-          <h1 class="header-text-dark">Powerful Features for Your Business</h1>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <!-- SECTION Hero -->
+      <section class="row">
+        <div class="col-5 bg-dark-blue p-10 d-none d-sm-flex justify-content-center">
+
+          <div class="fw-bolder font-whiter">
+            <h1 class="fs-0">Focus On What Matters</h1>
+          </div>
+          <div class="px-3 font-whiter bl-light-blue my-3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint laborum numquam quo officiis, atque,
+              porro expedita aliquam dignissimos delectus cupiditate.</p>
+          </div>
           <div>
-            <div class="d-flex pb-3">
-              <div class="d-flex pe-10 align-items-center">
-                <i class="mdi mdi-store icon-yellow-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
+            <button type="button" class="btn btn-light-blue">Get Started</button>
+            <button type="button" class="btn btn-dark-blue"><i class="mdi mdi-play-circle-outline"></i> Watch
+              Video</button>
+          </div>
+        </div>
+
+        <!-- ANCHOR Hero Image + mobile text column -->
+        <div class="col-12 col-sm-7 full-img">
+
+          <!-- ANCHOR Hero Image + mobile text container -->
+          <div class="d-flex">
+            <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image position-relative">
+
+            <div class="hero-text d-sm-none position-absolute d-flex flex-column align-items-center">
+              <div class="fw-bolder font-whiter hero-title">
+                <h1 class="fs-0 pt-5">Focus On What Matters</h1>
               </div>
-              <div class="d-flex align-items-center">
-                <i class="mdi mdi-chart-bar icon-dark-blue-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
+
+              <div class="px-3 font-whiter bl-light-blue my-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sint laborum numquam quo officiis,
+                  atque,
+                  porro expedita aliquam dignissimos delectus cupiditate.</p>
               </div>
-            </div>
-            <div class="d-flex pb-3">
-              <div class="d-flex pe-10 align-items-center">
-                <i class="mdi mdi-calendar-text icon-magenta-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="mdi mdi-format-paint icon-magenta-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
-              </div>
-            </div>
-            <div class="d-flex pb-3">
-              <div class="d-flex pe-10 align-items-center">
-                <i class="mdi mdi-cart icon-cyan-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="mdi mdi-circle-double icon-orange-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
-              </div>
-            </div>
-            <div class="d-flex pb-3">
-              <div class="d-flex pe-10 align-items-center">
-                <i class="mdi mdi-note icon-light-green-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
-              </div>
-              <div class="d-flex align-items-center">
-                <i class="mdi mdi-access-point icon-orange-red-sm"></i> 
-                <p class="no-margin">Lorem, ipsum dolor.</p>
+
+              <div>
+                <button type="button" class="btn btn-light-blue">Get
+                  Started</button>
+                <button type="button" class="btn btn-dark-blue"><i class="mdi mdi-play-circle-outline"></i> Watch
+                  Video</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="header-text-dark">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut quidem, consequatur, doloremque sunt sit corrupti necessitatibus dolorum ab hic, quos harum?</p>
-          <button type="button" class="btn btn-light-blue header-block-light">Get Started</button>
-        </div>
-      </div>
-      <div class="col-4">
-        <img src="nova-web-lg-Copy.png" alt="phone-img" class="image">
-      </div>
-    </section>
-    <!-- SECTION Recent Blog Posts -->
-    <section class="row p-5">
-      <div class="col-12">
+      </section>
+      <!-- SECTION Why choose us? -->
+      <section class="row p-5">
         <div class="col-12 text-center mb-1">
-          <h1>Recent Blog Posts</h1>
+          <h1>Why choose us</h1>
         </div>
         <div class="col-12 d-flex justify-content-center icon-height align-items-center mb-3">
           <i class="mdi mdi-minus minus-icon"></i>
         </div>
-      </div>
-      <div class="col-3">
-        <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
-        <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
-        <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
-        <p class="text-info fw-bold">Lorem, ipsum. --></p>
-      </div>
-      <div class="col-3">
-        <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
-        <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
-        <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
-        <p class="text-info fw-bold">Lorem, ipsum. --></p>
-      </div>
-      <div class="col-3">
-        <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
-        <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
-        <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
-        <p class="text-info fw-bold">Lorem, ipsum. --></p>
-      </div>
-      <div class="col-3">
-        <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
-        <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
-        <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
-        <p class="text-info fw-bold">Lorem, ipsum. --></p>
-      </div>
-    </section>
-    <!-- SECTION Info bar -->
-    <section class="row p-5 bg-light-color">
-      <div class="col-4 pe-4 p-3">
-        <h1>Lorem, ipsum.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas quaerat inventore nihil, recusandae, enim earum sit, tenetur et eum alias aspernatur consequatur dolore velit numquam quisquam doloremque.</p>
-        <div class="d-flex">
-          <button type="button" class="btn btn-light-blue header-block-light me-2"><i class="mdi mdi-twitter"></i></button>
-          <button type="button" class="btn btn-light-blue header-block-light mx-2"><i class="mdi mdi-facebook"></i></button>
-          <button type="button" class="btn btn-light-blue header-block-light mx-2"><i class="mdi mdi-instagram"></i></button>
-          <button type="button" class="btn btn-light-blue header-block-light ms-2"><i class="mdi mdi-linkedin"></i></button>
+        <div class="col-12 col-sm-4 full-img">
+          <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
         </div>
-      </div>
-      <div class="col-2 px-4 p-3">
-        <h3>Useful Links</h3>
-        <p><span class="text-info"> - </span>Home</p>
-        <p><span class="text-info"> - </span>About us</p>
-        <p><span class="text-info"> - </span>Services</p>
-        <p><span class="text-info"> - </span>Terms of service</p>
-        <p><span class="text-info"> - </span>Privacy policy</p>
-      </div>
-      <div class="col-2 px-4 p-3">
-        <h3>Our Services</h3>
-        <p><span class="text-info"> - </span>Web Design</p>
-        <p><span class="text-info"> - </span>Web Development</p>
-        <p><span class="text-info"> - </span>Project Management</p>
-        <p><span class="text-info"> - </span>Marketing</p>
-        <p><span class="text-info"> - </span>Graphic Design</p>
-      </div>
-      <div class="col-2 ps-4 p-3 d-flex flex-column justify-content-between">
-        <h3 class="no-margin">Contact Us</h3>
-        <div>
-          <p class="no-margin">123 Fake St.</p>
-          <p class="no-margin">City, State 11111</p>
-          <p class="no-margin">Country</p>
+        <div class="col-12 col-sm-8 d-flex align-items-center bg-light-color">
+          <div>
+            <i class="mdi mdi-chevron-left icon-size"></i>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugiat natus omnis laudantium totam
+              blanditiis perspiciatis odit reiciendis, culpa similique? Voluptas tempora numquam aut!</p>
+            <i class="mdi mdi-dots-horizontal icon-size mt-5"></i>
+          </div>
+          <div>
+            <i class="mdi mdi-chevron-right icon-size"></i>
+          </div>
         </div>
-        <div>
-          <p class="no-margin"><span class="fw-bold">Phone: </span>1 (111) 111 - 1111</p>
-          <p class="no-margin"><span class="fw-bold">Email: </span>example@domain.com</p>
+      </section>
+      <!-- SECTION Our services -->
+      <section class="row p-5">
+        <div class="col-12 text-center mb-1">
+          <h1>Our Services</h1>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer class="container-fluid">
-    <!-- SECTION Footer -->
-    <section class="row">
-      <div class="col-1">
+        <div class="col-12 d-flex justify-content-center icon-height align-items-center mb-3">
+          <i class="mdi mdi-minus minus-icon"></i>
+        </div>
+        <div class="col-12 col-sm-4 d-flex pe-4 pb-4">
+          <i class="mdi mdi-bag-suitcase icon-orange me-3"></i>
+          <div>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus
+              rerum.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex px-4 pb-4">
+          <i class="mdi mdi-format-list-checks icon-green me-3"></i>
+          <div>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus
+              rerum.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex ps-4 pb-4">
+          <i class="mdi mdi-chart-bar icon-magenta me-3"></i>
+          <div>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus
+              rerum.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex pt-4 pe-4">
+          <i class="mdi mdi-binoculars icon-cyan me-3"></i>
+          <div>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus
+              rerum.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex pt-4 px-4">
+          <i class="mdi mdi-weather-sunny icon-yellow me-3"></i>
+          <div>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus
+              rerum.</p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 d-flex pt-4 ps-4">
+          <i class="mdi mdi-calendar-multiselect icon-dark-blue me-3"></i>
+          <div>
+            <h3>Lorem, ipsum.</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente praesentium quia omnis qui natus
+              rerum.</p>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION Call to action -->
+      <section class="row img-bg-cta d-flex justify-content-center align-items-center">
+        <div class="col-12 col-sm-6 p-10 header-text">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut quidem, consequatur, doloremque sunt
+            sit corrupti necessitatibus dolorum ab hic, quos harum?</p>
+          <button type="button" class="btn btn-light-blue header-block">Call To Action</button>
+        </div>
+      </section>
 
-      </div>
-      <div class="col-10 d-flex flex-column align-items-center p-3">
-        <p class="no-margin"><i class="mdi mdi-copyright"></i> Copyright <span class="fw-bold">Nova</span>. All Rights Reserved</p>
-        <p class="no-margin">Designed by <span class="text-info">BootstrapMade</span></p>
-      </div>
-      <div class="col-1 p-3 d-flex justify-content-end align-items-end">
-        <button type="button" class="btn btn-light-blue-square header-block-light ms-2"><i class="mdi mdi-arrow-up"></i></button>
-      </div>
-    </section>
-  </footer>
-</body>
+      <!-- SECTION Phone section-->
+      <section class="row p-7 dual-tone-bg">
+        <div class="col-12 col-sm-8 p-sm-8">
+          <div class="mb-sm-10">
+            <h1 class="header-text-dark">Powerful Features for Your Business</h1>
+            <div>
+              <div class="d-sm-flex pb-3">
+                <div class="d-flex pe-sm-10 align-items-center">
+                  <i class="mdi mdi-store icon-yellow-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="mdi mdi-chart-bar icon-dark-blue-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div class="d-sm-flex pb-3">
+                <div class="d-flex pe-sm-10 align-items-center">
+                  <i class="mdi mdi-calendar-text icon-magenta-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="mdi mdi-format-paint icon-magenta-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div class="d-sm-flex pb-3">
+                <div class="d-flex pe-sm-10 align-items-center">
+                  <i class="mdi mdi-cart icon-cyan-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="mdi mdi-circle-double icon-orange-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+              <div class="d-sm-flex pb-3">
+                <div class="d-flex pe-sm-10 align-items-center">
+                  <i class="mdi mdi-note icon-light-green-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="mdi mdi-access-point icon-orange-red-sm"></i>
+                  <p class="no-margin">Lorem, ipsum dolor.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TODO Restructure so Phone Image can be ahead of text on mobile without effecting desktop -->
+          <div class="header-text-dark">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut quidem, consequatur, doloremque
+              sunt sit corrupti necessitatibus dolorum ab hic, quos harum?</p>
+            <button type="button" class="btn btn-light-blue header-block-light">Call To Action</button>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4">
+          <img src="nova-web-lg-Copy.png" alt="phone-img" class="image">
+        </div>
+      </section>
+      <!-- SECTION Recent Blog Posts -->
+      <section class="row p-5">
+        <div class="col-12">
+          <div class="col-12 text-center mb-1">
+            <h1>Recent Blog Posts</h1>
+          </div>
+          <div class="col-12 d-flex justify-content-center icon-height align-items-center mb-3">
+            <i class="mdi mdi-minus minus-icon"></i>
+          </div>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
+          <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
+          <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas
+            nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
+          <p class="text-info fw-bold">Lorem, ipsum. --></p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
+          <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
+          <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas
+            nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
+          <p class="text-info fw-bold">Lorem, ipsum. --></p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
+          <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
+          <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas
+            nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
+          <p class="text-info fw-bold">Lorem, ipsum. --></p>
+        </div>
+        <div class="col-12 col-sm-3">
+          <img src="https://thiscatdoesnotexist.com/" alt="cool-cat" class="img-fluid image">
+          <p><span class="text-info">Lorem, ipsum dolor.</span> / Lorem, ipsum.</p>
+          <h3 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, dignissimos repellat inventore voluptas
+            nam quia ullam fugit atque recusandae delectus voluptatum ...</p>
+          <p class="text-info fw-bold">Lorem, ipsum. --></p>
+        </div>
+      </section>
+      <!-- SECTION Info bar -->
+      <section class="row p-5 bg-light-color">
+        <div class="col-12 col-sm-4 pe-4 p-3">
+          <h1>Lorem, ipsum.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quas quaerat inventore nihil, recusandae,
+            enim
+            earum sit, tenetur et eum alias aspernatur consequatur dolore velit numquam quisquam doloremque.</p>
+          <div class="d-flex">
+            <button type="button" class="btn btn-light-blue header-block-light me-2"><i
+                class="mdi mdi-twitter"></i></button>
+            <button type="button" class="btn btn-light-blue header-block-light mx-2"><i
+                class="mdi mdi-facebook"></i></button>
+            <button type="button" class="btn btn-light-blue header-block-light mx-2"><i
+                class="mdi mdi-instagram"></i></button>
+            <button type="button" class="btn btn-light-blue header-block-light ms-2"><i
+                class="mdi mdi-linkedin"></i></button>
+          </div>
+        </div>
+        <div class="col-6 col-sm-2 px-4 p-3">
+          <h3>Useful Links</h3>
+          <p><span class="text-info"> - </span>Home</p>
+          <p><span class="text-info"> - </span>About us</p>
+          <p><span class="text-info"> - </span>Services</p>
+          <p><span class="text-info"> - </span>Terms of service</p>
+          <p><span class="text-info"> - </span>Privacy policy</p>
+        </div>
+        <div class="col-6 col-sm-2 px-4 p-3">
+          <h3>Our Services</h3>
+          <p><span class="text-info"> - </span>Web Design</p>
+          <p><span class="text-info"> - </span>Web Development</p>
+          <p><span class="text-info"> - </span>Project Management</p>
+          <p><span class="text-info"> - </span>Marketing</p>
+          <p><span class="text-info"> - </span>Graphic Design</p>
+        </div>
+        <div class="col-12 col-sm-2 ps-4 p-3 d-flex flex-column justify-content-center justify-content-sm-between">
+          <h3 class="no-margin">Contact Us</h3>
+          <div>
+            <p class="no-margin">123 Fake St.</p>
+            <p class="no-margin">City, State 11111</p>
+            <p class="no-margin">Country</p>
+          </div>
+          <div>
+            <p class="no-margin"><span class="fw-bold">Phone: </span>1 (111) 111 - 1111</p>
+            <p class="no-margin"><span class="fw-bold">Email: </span>example@domain.com</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="container-fluid">
+      <!-- SECTION Footer -->
+      <section class="row">
+        <div class="col-1 d-none d-sm-block">
+
+        </div>
+        <div class="col-11 col-sm-10 d-flex flex-column align-items-center p-sm-3">
+          <p class="no-margin"><i class="mdi mdi-copyright"></i> Copyright <span class="fw-bold">Nova</span>. All Rights
+            Reserved</p>
+          <p class="no-margin">Designed by <span class="text-info">BootstrapMade</span></p>
+        </div>
+        <div class="col-1 p-sm-3 d-flex justify-content-end align-items-end">
+          <button type="button" class="btn btn-light-blue-square header-block-light ms-2"><i
+              class="mdi mdi-arrow-up"></i></button>
+        </div>
+      </section>
+    </footer>
+  </body>
+
 </html>
